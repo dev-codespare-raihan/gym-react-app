@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Halden Athletic Club — Train with intention",
+      "hasCanvas": false,
+      "bodyTextLen": 3656,
+      "bodyTextHash": "d097d333034b241496d83cab9b22a43a68afdc091b9b2b0950fad3d5430261d5",
+      "bodyTextPrefix": "Skip to content HALDEN PROGRAMS SCHEDULE COACHES MEMBERSHIP THE ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Halden Athletic Club — Train with intention",
+      "hasCanvas": false,
+      "bodyTextLen": 3597,
+      "bodyTextHash": "8f6d29324ba45f61e22a059d213c7b626651dd726737799b51d88ed847f0dffc",
+      "bodyTextPrefix": "Skip to content HALDEN TRIBECA · EST. 2019 Train with intention.",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Roboto Condensed", "Roboto", ui-sans-serif, sans-serif;
+
+  --color-bone: #f3f0e8;
+  --color-bone-2: #e6e0d4;
+  --color-ink: #141311;
+  --color-ink-soft: #2c2926;
+  --color-muted: #564f48;
+  --color-line: #ddd4c6;
+  --color-brass: #7c4a28;
+  --color-brass-hot: #945832;
+  --color-brass-bright: #d7b48a;
+  --color-char: #121110;
+  --color-char-2: #1e1c19;
+
+  --tracking-brand: 0.14em;
+  --aspect-portrait: 3 / 4;
+  --radius-sm: 2px;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-bone);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-brass) 32%, white);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    transition-property: transform, background-color, color, border-color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+  }
+
+  .btn:active:not(:disabled) {
+    scale: 0.96;
+  }
+
+  .field {
+    min-height: 3rem;
+    width: 100%;
+    border: 1px solid var(--color-line);
+    background: var(--color-bone);
+    padding-inline: 0.75rem;
+    font-size: 1rem;
+    color: var(--color-ink);
+  }
+
+  textarea.field {
+    min-height: 8rem;
+    padding-block: 0.75rem;
+  }
+}

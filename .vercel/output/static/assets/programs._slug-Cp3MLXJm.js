@@ -1,0 +1,1 @@
+import{V as e,s as t}from"./chrome-lcyX-gob.js";var n=e(),r=()=>(0,n.jsx)(`div`,{className:`pt-16 md:pt-20`,children:(0,n.jsx)(t,{title:`That program isn’t on the board.`,body:`It may have been renamed. The six we run are listed with the rest of the house.`})});export{r as notFoundComponent};

@@ -1,0 +1,1 @@
+import{V as e,s as t}from"./chrome-lcyX-gob.js";var n=e(),r=()=>(0,n.jsx)(`div`,{className:`pt-16 md:pt-20`,children:(0,n.jsx)(t,{title:`We don’t have that coach.`,body:`The staff page lists everyone who writes a program here.`})});export{r as notFoundComponent};
